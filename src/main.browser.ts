@@ -1,8 +1,8 @@
 import 'reflect-metadata';
 import 'zone.js';
 
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {AppModule} from './app/app.module';
+import {platformBrowser} from '@angular/platform-browser';
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+import {AppModuleNgFactory} from './app/app.module.ngfactory';
+
+platformBrowser().bootstrapModuleFactory(AppModuleNgFactory).catch(err => console.error(err));

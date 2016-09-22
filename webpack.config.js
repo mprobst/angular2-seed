@@ -5,7 +5,7 @@ var path = require('path');
 // Webpack Config
 var webpackConfig = {
   entry: {
-    'main': './src/main.browser.ts',
+    'main': 'main.browser',
   },
 
   output: {
@@ -56,6 +56,7 @@ var defaultConfig = {
 
   resolve: {
     modules: [
+      path.resolve('./build'),
       path.resolve('./src'),
       path.resolve('./node_modules')
     ],
