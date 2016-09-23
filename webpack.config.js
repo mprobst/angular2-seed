@@ -27,7 +27,10 @@ var webpackConfig = {
       output: {
         comments: false
       },
-      sourceMap: true
+      sourceMap: true,
+      mangle: {
+        toplevel: true,
+      }
     }),
   ],
 
