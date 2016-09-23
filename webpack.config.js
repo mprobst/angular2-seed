@@ -28,9 +28,6 @@ var webpackConfig = {
         comments: false
       },
       sourceMap: true,
-      mangle: {
-        toplevel: true,
-      }
     }),
   ],
 
